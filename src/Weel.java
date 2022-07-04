@@ -1,9 +1,7 @@
-public enum Weel {
-    ;
+public class Weel {
+    public int radius;
 
-    Weel(int radius) {
+    public Weel(int radius) {
         this.radius = radius;
     }
-
-    private int radius;
 }
