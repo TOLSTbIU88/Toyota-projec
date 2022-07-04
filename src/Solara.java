@@ -1,2 +1,6 @@
-public class Solara extends Car {
+public class Solara implements StartCar {
+    @Override
+    public void Start() {
+
+    }
 }

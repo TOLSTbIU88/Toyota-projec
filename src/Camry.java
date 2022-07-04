@@ -1,2 +1,6 @@
-public class Camry extends Car {
+public class Camry implements StartCar {
+    @Override
+    public void Start() {
+
+    }
 }

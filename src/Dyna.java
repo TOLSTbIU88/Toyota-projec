@@ -1,2 +1,6 @@
-public class Dyna extends Car {
+public class Dyna implements StartCar {
+    @Override
+    public void Start() {
+
+    }
 }
