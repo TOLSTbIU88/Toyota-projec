@@ -1,4 +1,4 @@
-public class Camry implements StartCar {
+public class PassengerСar implements StartCar {
     @Override
     public void Start() {
 

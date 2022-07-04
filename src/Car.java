@@ -44,23 +44,23 @@ public class Car {
         this.headlights = headlights;
     }
 
-    public static Camry NovCamry (){
-        Camry camry = new Camry();
+    public static PassengerСar NovCamry (){
+        PassengerСar camry = new PassengerСar();
         return camry;
     }
 
-    public static Solara NovSolara (){
-        Solara solara = new Solara();
+    public static Cabriolet NovSolara (){
+        Cabriolet solara = new Cabriolet();
         return solara;
     }
 
-    public static Hiance NovHiance (){
-        Hiance hiance = new Hiance();
+    public static CargoVan NovHiance (){
+        CargoVan hiance = new CargoVan();
         return hiance;
     }
 
-    public static Dyna NovDyna (){
-        Dyna dyna = new Dyna();
+    public static CargoVan NovDyna (){
+        CargoVan dyna = new CargoVan();
         return dyna;
     }
 }

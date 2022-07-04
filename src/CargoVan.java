@@ -1,4 +1,4 @@
-public class Hiance implements StartCar{
+public class CargoVan implements StartCar{
     @Override
     public void Start() {
 
