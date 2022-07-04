@@ -3,9 +3,11 @@ public class Camry implements StartCar {
     public void Start() {
 
     }
-
     @Override
     public void Stop() {
 
+    }
+    public void turnMuzic (){
+        System.out.println("функция подключить музыку");
     }
 }

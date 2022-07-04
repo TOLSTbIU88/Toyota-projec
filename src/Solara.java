@@ -8,4 +8,7 @@ public class Solara implements StartCar {
     public void Stop() {
 
     }
+    public void miniFridge (){
+        System.out.println("функция охладить напиток");
+    }
 }

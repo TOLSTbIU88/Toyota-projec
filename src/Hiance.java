@@ -8,4 +8,7 @@ public class Hiance implements StartCar{
     public void Stop() {
 
     }
+    public void spareWheels (){
+        System.out.println("наличие запасного колеса");
+    }
 }

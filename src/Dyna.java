@@ -8,4 +8,7 @@ public class Dyna implements StartCar {
     public void Stop() {
 
     }
+    public void powerSocket (){
+        System.out.println("функция зарядить телефон");
+    }
 }
