@@ -3,4 +3,9 @@ public class Camry implements StartCar {
     public void Start() {
 
     }
+
+    @Override
+    public void Stop() {
+
+    }
 }
