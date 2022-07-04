@@ -2,32 +2,9 @@ public class Car {
 
     private int countGasTanks;
     private boolean engine;
-
     private boolean electrics;
+    private boolean headlights;
 
-    public Car(boolean engine) {
-        this.engine = engine;
-    }
-
-    public boolean isEngine() {
-        return engine;
-    }
-
-    public void setEngine(boolean engine) {
-        this.engine = engine;
-    }
-
-    public Car(int countGasTanks) {
-        this.countGasTanks = countGasTanks;
-    }
-
-    public int getCountGasTanks() {
-        return countGasTanks;
-    }
-
-    public void setCountGasTanks(int countGasTanks) {
-        this.countGasTanks = countGasTanks;
-    }
 
     public static Camry NovCamry (){
         Camry camry = new Camry();
