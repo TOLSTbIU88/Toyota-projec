@@ -1,7 +1,6 @@
-package auto.TypeCar.CarsOBJ;
+package auto.typecar.carsobj;
 
-import auto.TypeCar.Cabriolet;
-import auto.TypeCar.PassengerСar;
+import auto.typecar.Cabriolet;
 
 public class Solara extends Cabriolet {
     @Override

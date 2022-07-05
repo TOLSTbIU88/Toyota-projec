@@ -1,6 +1,6 @@
-package auto.TypeCar.CarsOBJ;
+package auto.typecar.carsobj;
 
-import auto.TypeCar.PassengerСar;
+import auto.typecar.PassengerСar;
 
 public class Camry extends PassengerСar {
     @Override

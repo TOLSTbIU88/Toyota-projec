@@ -1,4 +1,4 @@
-package auto.TypeCar;
+package auto.typecar;
 
 import auto.Car;
 

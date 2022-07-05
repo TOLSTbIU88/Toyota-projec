@@ -1,6 +1,6 @@
-package auto.TypeCar.CarsOBJ;
+package auto.typecar.carsobj;
 
-import auto.TypeCar.CargoVan;
+import auto.typecar.CargoVan;
 
 public class Hiance extends CargoVan {
     @Override
