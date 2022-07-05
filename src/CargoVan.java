@@ -1,14 +1,6 @@
-public class CargoVan implements StartCar{
-    @Override
-    public void Start() {
+public class CargoVan extends Car{
 
-    }
-
-    @Override
-    public void Stop() {
-
-    }
-    public void spareWheels (){
-        System.out.println("наличие запасного колеса");
+    public CargoVan(int countGasTanks, boolean engine, boolean electrics, boolean headlights) {
+        super(countGasTanks, engine, electrics, headlights);
     }
 }

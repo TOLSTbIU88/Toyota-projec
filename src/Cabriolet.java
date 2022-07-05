@@ -1,14 +1,6 @@
-public class Cabriolet implements StartCar {
-    @Override
-    public void Start() {
+public class Cabriolet extends Car {
 
-    }
-
-    @Override
-    public void Stop() {
-
-    }
-    public void miniFridge (){
-        System.out.println("функция охладить напиток");
+    public Cabriolet(int countGasTanks, boolean engine, boolean electrics, boolean headlights) {
+        super(countGasTanks, engine, electrics, headlights);
     }
 }

@@ -1,13 +1,6 @@
-public class PassengerСar implements StartCar {
-    @Override
-    public void Start() {
+public class PassengerСar extends Car {
 
-    }
-    @Override
-    public void Stop() {
-
-    }
-    public void turnMuzic (){
-        System.out.println("функция подключить музыку");
+    public PassengerСar(int countGasTanks, boolean engine, boolean electrics, boolean headlights) {
+        super(countGasTanks, engine, electrics, headlights);
     }
 }
