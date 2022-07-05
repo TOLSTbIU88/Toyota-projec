@@ -6,11 +6,11 @@ public class Hiance extends CargoVan {
 
 
     @Override
-    public void run() {
+    public void startMoving() {
 
     }
 
-    public Hiance(double price) {
+    public Hiance(float price) {
         super(price);
     }
 

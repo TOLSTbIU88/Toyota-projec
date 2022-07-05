@@ -4,16 +4,16 @@ import auto.typecar.Cabriolet;
 
 public class Solara extends Cabriolet {
     @Override
-    public void run() {
+    public void startMoving() {
 
     }
 
-    public Solara(double price) {
+    public Solara(float price) {
         super(price);
     }
 
-    public String miniFridge() {
-        return "функция охладить напиток";
+    public void miniFridge() {
+
     }
 
 }

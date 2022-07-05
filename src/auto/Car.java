@@ -2,10 +2,10 @@ package auto;
 
 public abstract class Car {
 
-    private double price;
-    public abstract void run();
+    private float price;
+    public abstract void startMoving();
 
-    public Car(double price) {
+    public Car(float price) {
         this.price = price;
     }
 }

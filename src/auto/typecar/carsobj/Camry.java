@@ -5,16 +5,16 @@ import auto.typecar.PassengerСar;
 public class Camry extends PassengerСar {
 
     @Override
-    public void run() {
+    public void startMoving() {
 
     }
 
-    public Camry(double price) {
+    public Camry(float price) {
         super(price);
     }
 
-    public String USB() {
-        return "функция подключить музыку!";
+    public void USB() {
+
     }
 
 }

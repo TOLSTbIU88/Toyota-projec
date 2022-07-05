@@ -4,16 +4,16 @@ import auto.typecar.CargoVan;
 
 public class Dyna extends CargoVan {
     @Override
-    public void run() {
+    public void startMoving() {
 
     }
 
-    public Dyna(double price) {
+    public Dyna(float price) {
         super(price);
     }
 
-    public String powerSocket() {
-        return "функция зарядить телефон";
+    public void powerSocket() {
+
     }
 
 }

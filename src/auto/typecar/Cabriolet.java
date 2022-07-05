@@ -4,7 +4,7 @@ import auto.Car;
 
 public abstract class Cabriolet extends Car {
 
-    public Cabriolet(double price) {
+    public Cabriolet(float price) {
         super(price);
     }
 }
