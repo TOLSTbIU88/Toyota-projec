@@ -1,6 +1,0 @@
-public abstract class PassengerСar extends Car {
-
-    public PassengerСar(int countGasTanks, boolean engine, boolean electrics, boolean headlights) {
-        super(countGasTanks, engine, electrics, headlights);
-    }
-}
