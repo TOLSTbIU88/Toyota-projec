@@ -1,3 +1,5 @@
+package auto.details;
+
 public enum Weel {
     CAMRY(17),
     SOLARA(16),
