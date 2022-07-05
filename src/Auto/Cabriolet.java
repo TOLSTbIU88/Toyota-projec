@@ -1,3 +1,5 @@
+package Auto;
+
 public class Cabriolet extends Car {
 
     public Cabriolet(int countGasTanks, boolean engine, boolean electrics, boolean headlights) {

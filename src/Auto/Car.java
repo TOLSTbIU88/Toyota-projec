@@ -1,3 +1,5 @@
+package Auto;
+
 public abstract class Car  {
 
     private int countGasTanks;

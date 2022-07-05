@@ -1,4 +1,6 @@
-public class CargoVan extends Car{
+package Auto;
+
+public class CargoVan extends Car {
 
     public CargoVan(int countGasTanks, boolean engine, boolean electrics, boolean headlights) {
         super(countGasTanks, engine, electrics, headlights);
