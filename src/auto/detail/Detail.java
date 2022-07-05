@@ -1,4 +1,4 @@
-package auto.details;
+package auto.detail;
 
 public abstract class Detail {
 }
