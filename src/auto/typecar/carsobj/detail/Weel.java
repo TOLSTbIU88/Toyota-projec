@@ -1,4 +1,4 @@
-package auto.detail;
+package auto.typecar.carsobj.detail;
 
 public enum Weel  {
     CAMRY(17),

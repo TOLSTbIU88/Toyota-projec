@@ -1,4 +1,4 @@
-package auto.detail;
+package auto.typecar.carsobj.detail;
 
 public abstract class Detail {
 
