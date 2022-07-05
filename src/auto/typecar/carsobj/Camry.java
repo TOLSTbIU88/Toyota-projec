@@ -12,15 +12,4 @@ public class Camry extends PassengerСar {
         return "функция подключить музыку!";
     }
 
-    @Override
-    public void Start() {
-
-    }
-
-    @Override
-    public void Stop() {
-
-    }
-
-
 }

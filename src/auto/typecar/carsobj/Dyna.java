@@ -11,13 +11,4 @@ public class Dyna extends CargoVan {
         return "функция зарядить телефон";
     }
 
-    @Override
-    public void Start() {
-
-    }
-
-    @Override
-    public void Stop() {
-
-    }
 }

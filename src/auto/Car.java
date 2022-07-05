@@ -1,6 +1,6 @@
 package auto;
 
-public abstract class Car implements StartCar {
+public abstract class Car {
 
     private double price;
 

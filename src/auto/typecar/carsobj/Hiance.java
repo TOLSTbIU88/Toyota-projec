@@ -9,13 +9,4 @@ public class Hiance extends CargoVan {
         super(price);
     }
 
-    @Override
-    public void Start() {
-
-    }
-
-    @Override
-    public void Stop() {
-
-    }
 }
