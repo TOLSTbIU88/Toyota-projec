@@ -1,4 +1,4 @@
 package auto.details;
 
-public class GasTanks {
+public class GasTanks extends Detail{
 }

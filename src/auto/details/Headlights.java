@@ -1,4 +1,4 @@
 package auto.details;
 
-public class Headlights {
+public class Headlights extends Detail{
 }

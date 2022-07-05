@@ -1,3 +1,5 @@
+package auto;
+
 public interface StartCar {
 
     void Start ();

@@ -1,4 +1,5 @@
 package auto.details;
 
-public class Engine {
+public class Engine extends Detail {
+
 }

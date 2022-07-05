@@ -1,5 +1,6 @@
 package auto;
 
-public abstract class Car  {
+public abstract class Car implements StartCar {
+    
 
 }
