@@ -5,6 +5,10 @@ import auto.typecar.CargoVan;
 public class Hiance extends CargoVan {
 
 
+    public Hiance(double price) {
+        super(price);
+    }
+
     @Override
     public void Start() {
 
