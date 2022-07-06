@@ -22,6 +22,7 @@ public class Dyna extends CargoVan {
 
 
     public void powerSocket() {
+        System.out.println("зарядить телефон");
 
     }
 

@@ -21,6 +21,7 @@ public class Solara extends Cabriolet {
     }
 
     public void miniFridge() {
+        System.out.println("охладить напиток");
 
     }
 

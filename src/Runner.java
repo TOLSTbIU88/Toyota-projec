@@ -16,6 +16,12 @@ public class Runner {
 
         camry.startMoving();
         camry.USB();
+        solara.startMoving();
+        solara.miniFridge();
+        hiance.startMoving();
+
+        dyna.startMoving();
+        dyna.powerSocket();
 
 
 
