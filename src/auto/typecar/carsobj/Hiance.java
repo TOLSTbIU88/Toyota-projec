@@ -5,16 +5,8 @@ import auto.typecar.CargoVan;
 public class Hiance extends CargoVan {
 
 
-    public Hiance(float price) {
-        super(price);
-    }
-
-    public Hiance(int speed) {
-        super(speed);
-    }
-
-    public Hiance(String color) {
-        super(color);
+    public Hiance(float carPrice, int carSpeed, String carColor) {
+        super(carPrice, carSpeed, carColor);
     }
 
     @Override

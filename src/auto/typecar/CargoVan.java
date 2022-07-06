@@ -5,15 +5,7 @@ import auto.Car;
 public abstract class CargoVan extends Car {
 
 
-    public CargoVan(float price) {
-        super(price);
-    }
-
-    public CargoVan(int speed) {
-        super(speed);
-    }
-
-    public CargoVan(String color) {
-        super(color);
+    public CargoVan(float carPrice, int carSpeed, String carColor) {
+        super(carPrice, carSpeed, carColor);
     }
 }

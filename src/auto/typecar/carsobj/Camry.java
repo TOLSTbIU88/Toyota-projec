@@ -5,23 +5,10 @@ import auto.typecar.PassengerСar;
 public class Camry extends PassengerСar {
 
 
-
-    public Camry(float price) {
-        super(price);
+    public Camry(float carPrice, int carSpeed, String carColor) {
+        super(carPrice, carSpeed, carColor);
     }
 
-    public Camry(int speed) {
-        super(speed);
-    }
-
-    public Camry(String color) {
-        super(color);
-    }
-
-    @Override
-    public void startMoving() {
-
-    }
 
 
     public void turnMuzik() {

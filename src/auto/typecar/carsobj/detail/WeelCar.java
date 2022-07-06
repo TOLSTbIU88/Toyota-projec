@@ -2,23 +2,19 @@ package auto.typecar.carsobj.detail;
 
 import auto.StartCarException;
 
-public class WeelCar extends Detail{
+public class WeelCar {
 
     public boolean isPunctured;
 
-    public WeelCar(boolean isWorkable) {
-        super(isWorkable);
+    public WeelCar(boolean isPunctured) {
+        this.isPunctured = isPunctured;
     }
 
-    @Override
-    public void setWorkable (boolean workable) {
-        super.setWorkable(workable);
-        if (isPunctured){
-            throw new StartCarException(isPunctured);
-        }else {
+    public boolean isPunctured() {
+        return isPunctured;
+    }
 
-        }
-
-
+    public void setPunctured(boolean punctured) {
+        isPunctured = punctured;
     }
 }
