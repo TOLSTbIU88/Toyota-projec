@@ -11,7 +11,7 @@ public class WeelCar extends Detail{
     }
 
     @Override
-    public void setWorkable (boolean workable) {
+    public void setWorkable (boolean workable) throws StartCarException {
         super.setWorkable(workable);
         if (isPunctured){
             throw new StartCarException(isPunctured);
