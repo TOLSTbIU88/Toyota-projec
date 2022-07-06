@@ -2,21 +2,23 @@ package auto;
 
 public abstract class Car {
 
-    private float price;
-    private int speed;
-    private String color;
+    private float carPrice;
+    private int carSpeed;
+    private String carColor;
 
     public Car(float price) {
-        this.price = price;
+        this.carPrice = price;
     }
 
     public Car(int speed) {
-        this.speed = speed;
+        this.carSpeed = speed;
     }
 
     public Car(String color) {
-        this.color = color;
+        this.carColor = color;
     }
+
+
 
     public abstract void startMoving();
 
