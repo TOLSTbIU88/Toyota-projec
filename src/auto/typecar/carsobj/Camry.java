@@ -4,6 +4,8 @@ import auto.typecar.PassengerСar;
 
 public class Camry extends PassengerСar {
 
+
+
     public Camry(float price) {
         super(price);
     }
