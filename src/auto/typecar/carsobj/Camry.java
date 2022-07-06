@@ -25,6 +25,7 @@ public class Camry extends PassengerСar {
 
 
     public void USB() {
+        System.out.println("подключить музыку");
 
     }
 
