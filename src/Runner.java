@@ -14,6 +14,9 @@ public class Runner {
         Hiance hiance = new Hiance(40);
         Dyna dyna = new Dyna(30);
 
+        camry.startMoving();
+        camry.USB();
+
 
 
     }
