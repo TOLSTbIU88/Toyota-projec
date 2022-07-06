@@ -15,7 +15,7 @@ public class Runner {
         Dyna dyna = new Dyna(30);
 
         camry.startMoving();
-        camry.USB();
+        camry.turnMuzik();
         solara.startMoving();
         solara.miniFridge();
         hiance.startMoving();
