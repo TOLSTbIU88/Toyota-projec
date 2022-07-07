@@ -22,7 +22,7 @@ public class Runner {
         solara.miniFridge();
         hiance.startMoving();
         hiance.stoptMoving();
-
+        hiance.spareWheel();
         dyna.startMoving();
         dyna.powerSocket();
         dyna.stoptMoving();

@@ -20,4 +20,9 @@ public class Hiance extends CargoVan {
 
     }
 
+    public void spareWheel() {
+        System.out.println("запасное колесо");
+
+    }
+
 }
