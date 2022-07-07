@@ -27,9 +27,5 @@ public class Runner {
         dyna.powerSocket();
         dyna.stoptMoving();
 
-
-
-
-
     }
 }
