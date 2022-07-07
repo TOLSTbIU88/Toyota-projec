@@ -9,8 +9,8 @@ public class Runner {
     public static void main(String[] args) {
 
 
-        Camry camry = new Camry(100,150,"red",Transmission.ROBOT,false);
-        Solara solara = new Solara(100,130,"red",Transmission.AUTO,false);
+        Camry camry = new Camry(100,150,"blue",Transmission.ROBOT,false);
+        Solara solara = new Solara(100,130,"white",Transmission.AUTO,false);
         Hiance hiance = new Hiance(4000,50,"red",Transmission.MANUAL,false);
         Dyna dyna = new Dyna(5000,50,"green", Transmission.MANUAL,false);
 
