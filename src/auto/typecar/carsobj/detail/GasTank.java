@@ -1,11 +1,10 @@
 package auto.typecar.carsobj.detail;
 
-public class GasTank extends Detail{
+public class GasTank {
 
     private int contPetrol;
 
-    public GasTank(boolean isWorkable, int contPetrol) {
-        super(isWorkable);
+    public GasTank(int contPetrol) {
         this.contPetrol = contPetrol;
     }
 

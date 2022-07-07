@@ -1,38 +1,32 @@
-import auto.StartCarException;
 import auto.typecar.carsobj.Camry;
 import auto.typecar.carsobj.Dyna;
 import auto.typecar.carsobj.Hiance;
 import auto.typecar.carsobj.Solara;
-import auto.typecar.carsobj.detail.WeelCar;
+import auto.typecar.carsobj.detail.Transmission;
+
 
 public class Runner {
     public static void main(String[] args) {
 
 
+        Camry camry = new Camry(100,150,"red",Transmission.ROBOT,false);
+        Solara solara = new Solara(100,130,"red",Transmission.AUTO,false);
+        Hiance hiance = new Hiance(4000,50,"red",Transmission.MANUAL,false);
+        Dyna dyna = new Dyna(5000,50,"green", Transmission.MANUAL,false);
 
-//    }
-//    public static void auto(){
-
-        Camry camry = new Camry(100,150,"red");
-        Solara solara = new Solara(100,130,"red");
-        Hiance hiance = new Hiance(4000,50,"red");
-        Dyna dyna = new Dyna(5000,50,"green");
-
-
-        try {
-            camry.startMoving();
-        } catch (StartCarException e) {
-            System.out.println(e);
-
-        }
+        camry.stoptMoving();
+        camry.startMoving();
         camry.turnMuzik();
         solara.startMoving();
+        solara.stoptMoving();
         solara.miniFridge();
         hiance.startMoving();
+        hiance.stoptMoving();
 
         dyna.startMoving();
         dyna.powerSocket();
-        System.out.println(dyna.getWeelCar().isPunctured());
+        dyna.stoptMoving();
+
 
 
 
