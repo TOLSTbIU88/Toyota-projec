@@ -6,5 +6,4 @@ public class Engine extends Detail {
         super(isWorkable);
     }
 
-
 }

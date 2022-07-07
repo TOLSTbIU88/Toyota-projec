@@ -11,6 +11,15 @@ public abstract class Car {
     private Transmission transmission;
     private boolean isGo;
 
+
+    public Car(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo) {
+        this.carPrice = carPrice;
+        this.carSpeed = carSpeed;
+        this.carColor = carColor;
+        this.transmission = transmission;
+        this.isGo = isGo;
+    }
+
     public float getCarPrice() {
         return carPrice;
     }
@@ -49,14 +58,6 @@ public abstract class Car {
 
     public void setGo(boolean go) {
         isGo = go;
-    }
-
-    public Car(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo) {
-        this.carPrice = carPrice;
-        this.carSpeed = carSpeed;
-        this.carColor = carColor;
-        this.transmission = transmission;
-        this.isGo = isGo;
     }
 
     public abstract void startMoving();

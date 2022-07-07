@@ -12,7 +12,7 @@ public class Solara extends Cabriolet {
 
     @Override
     public void startMoving() {
-        System.out.println("машина опоехала");
+        System.out.println("машина поехала");
 
     }
 
