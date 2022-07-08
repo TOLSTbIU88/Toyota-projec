@@ -1,6 +1,5 @@
 package auto.typecar.carsobj.detail;
 
-import auto.StartCarException;
 
 public abstract class Detail {
 
@@ -15,7 +14,7 @@ public abstract class Detail {
         return isWorkable;
     }
 
-    public void setWorkable(boolean workable) throws StartCarException {
+    public void setWorkable(boolean workable)  {
         isWorkable = workable;
     }
 

@@ -17,6 +17,7 @@ public class Camry extends PassengerСar {
 
     }
 
+
     @Override
     public void startMoving() {
         System.out.println("машина поехала");

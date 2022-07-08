@@ -28,6 +28,7 @@ public class Runner {
         dyna.powerSocket();
         dyna.stoptMoving();
 
+
     }
     public static WeelCar[] setWeelCar(){
         WeelCar[] weelCar = new WeelCar[4];
