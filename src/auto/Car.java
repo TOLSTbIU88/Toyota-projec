@@ -1,6 +1,7 @@
 package auto;
 
 import auto.typecar.carsobj.detail.Transmission;
+import auto.typecar.carsobj.detail.WeelCar;
 
 
 public abstract class Car {
@@ -10,14 +11,16 @@ public abstract class Car {
     private String carColor;
     private Transmission transmission;
     private boolean isGo;
+    private WeelCar[] wheelset;
 
 
-    public Car(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo) {
+    public Car(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo, WeelCar[] wheelset) {
         this.carPrice = carPrice;
         this.carSpeed = carSpeed;
         this.carColor = carColor;
         this.transmission = transmission;
         this.isGo = isGo;
+        this.wheelset = wheelset;
     }
 
     public float getCarPrice() {

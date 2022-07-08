@@ -2,12 +2,13 @@ package auto.typecar.carsobj;
 
 import auto.typecar.CargoVan;
 import auto.typecar.carsobj.detail.Transmission;
+import auto.typecar.carsobj.detail.WeelCar;
 
 public class Dyna extends CargoVan {
 
 
-    public Dyna(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo) {
-        super(carPrice, carSpeed, carColor, transmission, isGo);
+    public Dyna(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo, WeelCar[] wheelset) {
+        super(carPrice, carSpeed, carColor, transmission, isGo, wheelset);
     }
 
     @Override

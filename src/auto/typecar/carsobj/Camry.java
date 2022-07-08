@@ -3,7 +3,10 @@ package auto.typecar.carsobj;
 import auto.typecar.PassengerСar;
 import auto.typecar.carsobj.detail.Transmission;
 
+
+
 public class Camry extends PassengerСar {
+
     
     public Camry(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo) {
         super(carPrice, carSpeed, carColor, transmission, isGo);
