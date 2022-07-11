@@ -16,7 +16,7 @@ public class Runner {
 
         camry.stoptMoving();
         camry.startMoving();
-        camry.turnMuzik();
+        camry.();
         solara.startMoving();
         solara.stoptMoving();
         solara.miniFridge();

@@ -1,18 +1,21 @@
 package auto.typecar;
 
 import auto.Car;
-import auto.typecar.carsobj.detail.Transmission;
-import auto.typecar.carsobj.detail.Wheel;
+import auto.StartCarException;
+import auto.typecar.carsobj.detail.*;
 
 public abstract class CargoVan extends Car {
 
     private int loadCapacity;
 
-    public CargoVan(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo, Wheel[] wheelset, int loadCapacity) {
-        super(carPrice, carSpeed, carColor, transmission, isGo, wheelset);
+
+    public CargoVan(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo, Wheel[] wheels, GasTank gasTank, Engine engine, Electric electric, Headlight headLight) throws StartCarException {
+        super(carPrice, carSpeed, carColor, transmission, isGo, wheels, gasTank, engine, electric, headLight);
         this.loadCapacity = loadCapacity;
     }
 
-
+    public int getLoadCapacity() {
+        return loadCapacity;
+    }
 }
 

@@ -51,7 +51,7 @@ public abstract class Car {
 
         }
 
-        public void stop () {
+        public void stoptMoving () {
             this.isGo = false;
         }
 
