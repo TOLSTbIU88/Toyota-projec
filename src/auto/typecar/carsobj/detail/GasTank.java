@@ -12,4 +12,7 @@ public class GasTank {
         return contPetrol;
     }
 
+    public void setContPetrol(int contPetrol) {
+        this.contPetrol = contPetrol;
+    }
 }
