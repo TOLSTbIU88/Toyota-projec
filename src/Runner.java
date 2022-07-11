@@ -1,33 +1,38 @@
+import auto.StartCarException;
 import auto.typecar.carsobj.Camry;
 import auto.typecar.carsobj.Dyna;
 import auto.typecar.carsobj.Hiance;
 import auto.typecar.carsobj.Solara;
-import auto.typecar.carsobj.detail.Transmission;
+import auto.typecar.carsobj.detail.*;
 
 
 public class Runner {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws StartCarException {
+
+        GasTank gasTank = new GasTank(0);
+        Engine engine = new Engine(true);
+        Electric electrics = new Electric(true);
+        Headlight headLigths = new Headlight(true);
+        
+
+        Camry camry = new Camry(10000,120,"red",Transmission.AUTO,false,
+                createWheelsWithRadius(WheelRadius.R17),gasTank,engine,electrics,headLigths,new Usb());
+        Solara solara = new Solara(14000,160,"gold",Transmission.ROBOT,false,
+                createWheelsWithRadius(WheelRadius.R16),gasTank,engine,electrics,headLigths,new MiniFrigde());
+        Hiance hiance = new Hiance(16000,60,"green",Transmission.MANUAL,false,
+                createWheelsWithRadius(WheelRadius.R20),gasTank,engine,electrics,headLigths,);
+        Dyna dyna = new Dyna(18000,70,"black",Transmission.MANUAL,false,
+                createWheelsWithRadius(WheelRadius.R20),gasTank,engine,electrics,headLigths,);
 
 
-        Camry camry = new Camry(8000,150,"blue",Transmission.ROBOT,false,(),true);
-        Solara solara = new Solara(10000,130,"white",Transmission.AUTO,false);
-        Hiance hiance = new Hiance(4000,50,"red",Transmission.MANUAL,false);
-        Dyna dyna = new Dyna(5000,50,"green", Transmission.MANUAL,false);
+    }
 
-        camry.stoptMoving();
-        camry.startMoving();
-        camry.();
-        solara.startMoving();
-        solara.stoptMoving();
-        solara.miniFridge();
-        hiance.startMoving();
-        hiance.stoptMoving();
-        hiance.spareWheel();
-        dyna.startMoving();
-        dyna.powerSocket();
-        dyna.stoptMoving();
-
-
+    public static Wheel[] createWheelsWithRadius(WheelRadius wheelRadius) {
+        Wheel[] wheels = new Wheel[4];
+        for (int i = 0; i < wheels.length; i++) {
+            wheels[i] = new Wheel(false, wheelRadius);
+        }
+        return wheels;
     }
 
 

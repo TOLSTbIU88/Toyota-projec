@@ -23,10 +23,6 @@ public class Camry extends PassengerСar {
         return usb;
     }
 
-
-
-
-
     @Override
     public void startMoving() {
         System.out.println("машина поехала");

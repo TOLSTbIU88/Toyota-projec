@@ -6,9 +6,17 @@ import auto.typecar.carsobj.detail.*;
 
 public class Solara extends Cabriolet {
 
+    private MiniFrigde miniFrigde;
 
-    public Solara(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo, Wheel[] wheels, GasTank gasTank, Engine engine, Electric electric, Headlight headLight) throws StartCarException {
+    public Solara(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo,
+                  Wheel[] wheels, GasTank gasTank, Engine engine, Electric electric, Headlight headLight,
+                  MiniFrigde miniFrigde) throws StartCarException {
         super(carPrice, carSpeed, carColor, transmission, isGo, wheels, gasTank, engine, electric, headLight);
+        this.miniFrigde = miniFrigde;
+    }
+
+    public MiniFrigde getMiniFrigde() {
+        return miniFrigde;
     }
 
     @Override
@@ -23,9 +31,6 @@ public class Solara extends Cabriolet {
 
     }
 
-    public void miniFridge() {
-        System.out.println("охладить напиток");
 
-    }
 
 }
