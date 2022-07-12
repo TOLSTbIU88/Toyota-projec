@@ -1,6 +1,6 @@
 package auto.typecar.carsobj;
 
-import auto.StartCarException;
+
 import auto.typecar.PassengerСar;
 import auto.typecar.carsobj.detail.*;
 

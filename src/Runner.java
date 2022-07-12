@@ -13,7 +13,7 @@ public class Runner {
         Engine engine = new Engine(true);
         Electric electrics = new Electric(true);
         Headlight headLigths = new Headlight(true);
-        
+
 
         Camry camry = new Camry(10000,120,"red",Transmission.AUTO,false,
                 createWheelsWithRadius(WheelRadius.R17),gasTank,engine,electrics,headLigths,new Usb());
@@ -31,6 +31,7 @@ public class Runner {
         camry.isCruiseControlOn();
         solara.getMiniFrigde();
         camry.onHeadligths();
+        camry.checkCarHealth();
 
 
 
