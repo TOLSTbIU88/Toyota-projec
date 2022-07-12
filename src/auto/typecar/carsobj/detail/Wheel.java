@@ -7,6 +7,7 @@ public class Wheel extends Detail {
 
     public Wheel(boolean isWorkable,WheelRadius wheelRadius) {
         super(isWorkable);
+        this.wheelRadius = wheelRadius;
     }
 
     public WheelRadius getWheelRadius() {
