@@ -8,7 +8,8 @@ public abstract class PassengerСar extends Car {
 
     private boolean isCruiseControlOn;
 
-    public PassengerСar(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo, Wheel[] wheels, GasTank gasTank, Engine engine, Electric electric, Headlight headLight)  {
+    public PassengerСar(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo,
+                        Wheel[] wheels, GasTank gasTank, Engine engine, Electric electric, Headlight headLight)  {
         super(carPrice, carSpeed, carColor, transmission, isGo, wheels, gasTank, engine, electric, headLight);
     }
 
