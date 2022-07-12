@@ -13,6 +13,9 @@ public class Dyna extends CargoVan {
                 Wheel[] wheels, GasTank gasTank, Engine engine, Electric electric, Headlight headLight,
                 Socket socket){
         super(carPrice, carSpeed, carColor, transmission, isGo, wheels, gasTank, engine, electric, headLight);
+        if (wheels[0].getWheelRadius() != WheelRadius.R20) {
+            throw new RuntimeException("Радиус должен быть 20");
+        }
         this.socket = socket;
     }
 

@@ -12,6 +12,9 @@ public class Solara extends Cabriolet {
                   Wheel[] wheels, GasTank gasTank, Engine engine, Electric electric, Headlight headLight,
                   MiniFrigde miniFrigde)  {
         super(carPrice, carSpeed, carColor, transmission, isGo, wheels, gasTank, engine, electric, headLight);
+        if (wheels[0].getWheelRadius() != WheelRadius.R16) {
+            throw new RuntimeException("Радиус должен быть 16");
+        }
         this.miniFrigde = miniFrigde;
     }
 

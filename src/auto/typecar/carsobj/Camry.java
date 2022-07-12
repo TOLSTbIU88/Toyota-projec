@@ -13,7 +13,7 @@ public class Camry extends PassengerСar {
                  Wheel[] wheels, GasTank gasTank, Engine engine, Electric electric, Headlight headLight,Usb usb) {
         super(carPrice, carSpeed, carColor, transmission, isGo, wheels, gasTank, engine, electric, headLight);
         if (wheels[0].getWheelRadius() != WheelRadius.R17) {
-            throw new RuntimeException("Радиус у camry должен быть 17");
+            throw new RuntimeException("Радиус должен быть 17");
         }
 
         this.usb = usb;
