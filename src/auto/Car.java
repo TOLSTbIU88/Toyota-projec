@@ -19,7 +19,7 @@ public abstract class Car {
 
 
     public Car(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo, Wheel[] wheels,
-               GasTank gasTank, Engine engine, Electric electric, Headlight headLight) throws StartCarException {
+               GasTank gasTank, Engine engine, Electric electric, Headlight headLight) {
         this.carPrice = carPrice;
         this.carSpeed = carSpeed;
         this.carColor = carColor;
@@ -32,9 +32,9 @@ public abstract class Car {
         this.headLight = headLight;
     }
 
-    public abstract void startMoving() throws StartCarException;
 
-    public void start() throws StartCarException {
+
+    public  void startMoving() throws StartCarException {
         if (!checkWheels()) {
             throw new StartCarException("С колесами проблема");
         } else if (gasTank.getContPetrol() <= 0) {
@@ -61,7 +61,7 @@ public abstract class Car {
         }
     }
 
-    public void checkCarHealth() {
+    public void checkCarHealth() throws StartCarException {
         String result = "";
         if (!checkWheels()) {
             result += "С колесами проблема ";
@@ -79,7 +79,7 @@ public abstract class Car {
             result += "Фары сломаны ";
         }
         if (!result.equals("")) {
-            throw new RuntimeException(result);
+            throw new StartCarException(result);
         }
     }
 

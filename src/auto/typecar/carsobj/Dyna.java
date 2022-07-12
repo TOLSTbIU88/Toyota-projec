@@ -11,7 +11,7 @@ public class Dyna extends CargoVan {
 
     public Dyna(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo,
                 Wheel[] wheels, GasTank gasTank, Engine engine, Electric electric, Headlight headLight,
-                Socket socket) throws StartCarException {
+                Socket socket){
         super(carPrice, carSpeed, carColor, transmission, isGo, wheels, gasTank, engine, electric, headLight);
         this.socket = socket;
     }

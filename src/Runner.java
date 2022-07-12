@@ -20,9 +20,15 @@ public class Runner {
         Solara solara = new Solara(14000,160,"gold",Transmission.ROBOT,false,
                 createWheelsWithRadius(WheelRadius.R16),gasTank,engine,electrics,headLigths,new MiniFrigde());
         Hiance hiance = new Hiance(16000,60,"green",Transmission.MANUAL,false,
-                createWheelsWithRadius(WheelRadius.R20),gasTank,engine,electrics,headLigths,);
+                createWheelsWithRadius(WheelRadius.R20),gasTank,engine,electrics,headLigths);
         Dyna dyna = new Dyna(18000,70,"black",Transmission.MANUAL,false,
-                createWheelsWithRadius(WheelRadius.R20),gasTank,engine,electrics,headLigths,);
+                createWheelsWithRadius(WheelRadius.R20),gasTank,engine,electrics,headLigths,new Socket());
+
+        camry.startMoving();
+        solara.startMoving();
+        hiance.startMoving();
+        dyna.startMoving();
+
 
 
     }

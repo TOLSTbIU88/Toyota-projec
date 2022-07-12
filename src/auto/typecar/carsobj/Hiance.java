@@ -9,7 +9,7 @@ public class Hiance extends CargoVan {
 
     public Hiance(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo,
                   Wheel[] wheels, GasTank gasTank, Engine engine, Electric electric, Headlight headLight)
-            throws StartCarException {
+            {
         super(carPrice, carSpeed, carColor, transmission, isGo, wheels, gasTank, engine, electric, headLight);
     }
 

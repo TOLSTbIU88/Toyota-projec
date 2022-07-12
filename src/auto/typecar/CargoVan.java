@@ -9,7 +9,8 @@ public abstract class CargoVan extends Car {
     private int loadCapacity;
 
 
-    public CargoVan(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo, Wheel[] wheels, GasTank gasTank, Engine engine, Electric electric, Headlight headLight) throws StartCarException {
+    public CargoVan(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo,
+                    Wheel[] wheels, GasTank gasTank, Engine engine, Electric electric, Headlight headLight)  {
         super(carPrice, carSpeed, carColor, transmission, isGo, wheels, gasTank, engine, electric, headLight);
         this.loadCapacity = loadCapacity;
     }

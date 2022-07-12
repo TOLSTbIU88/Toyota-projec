@@ -10,7 +10,7 @@ public class Solara extends Cabriolet {
 
     public Solara(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo,
                   Wheel[] wheels, GasTank gasTank, Engine engine, Electric electric, Headlight headLight,
-                  MiniFrigde miniFrigde) throws StartCarException {
+                  MiniFrigde miniFrigde)  {
         super(carPrice, carSpeed, carColor, transmission, isGo, wheels, gasTank, engine, electric, headLight);
         this.miniFrigde = miniFrigde;
     }
