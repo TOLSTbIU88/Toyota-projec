@@ -28,6 +28,10 @@ public class Runner {
         solara.startMoving();
         hiance.startMoving();
         dyna.startMoving();
+        camry.isCruiseControlOn();
+        solara.getMiniFrigde();
+        camry.onHeadligths();
+
 
 
 
