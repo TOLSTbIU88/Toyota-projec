@@ -16,27 +16,19 @@ public class Runner {
 
 
         Camry camry = new Camry(10000,120,"red",Transmission.AUTO,false,
-                createWheelsWithRadius(WheelRadius.R17),gasTank,engine,electrics,headLigths,new Usb());
+                Factory.createWheelsWithRadius(WheelRadius.R17),gasTank,engine,electrics,headLigths,new Usb());
         Solara solara = new Solara(14000,160,"gold",Transmission.ROBOT,false,
-                createWheelsWithRadius(WheelRadius.R16),gasTank,engine,electrics,headLigths,new MiniFrigde());
+                Factory.createWheelsWithRadius(WheelRadius.R16),gasTank,engine,electrics,headLigths,new MiniFrigde());
         Hiance hiance = new Hiance(16000,60,"green",Transmission.MANUAL,false,
-                createWheelsWithRadius(WheelRadius.R20),gasTank,engine,electrics,headLigths);
+                Factory.createWheelsWithRadius(WheelRadius.R20),gasTank,engine,electrics,headLigths);
         Dyna dyna = new Dyna(18000,70,"black",Transmission.MANUAL,false,
-                createWheelsWithRadius(WheelRadius.R20),gasTank,engine,electrics,headLigths,new Socket());
+                Factory.createWheelsWithRadius(WheelRadius.R20),gasTank,engine,electrics,headLigths,new Socket());
 
         camry.startMoving();
         solara.startMoving();
         hiance.startMoving();
         dyna.startMoving();
 
-    }
-
-    public static Wheel[] createWheelsWithRadius(WheelRadius wheelRadius) {
-        Wheel[] wheels = new Wheel[4];
-        for (int i = 0; i < wheels.length; i++) {
-            wheels[i] = new Wheel(false, wheelRadius);
-        }
-        return wheels;
     }
 
 }
