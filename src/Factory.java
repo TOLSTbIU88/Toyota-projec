@@ -1,7 +1,8 @@
-import auto.typecar.Cabriolet;
-import auto.typecar.CargoVan;
-import auto.typecar.PassengerСar;
+
 import auto.typecar.carsobj.Camry;
+import auto.typecar.carsobj.Dyna;
+import auto.typecar.carsobj.Hiance;
+import auto.typecar.carsobj.Solara;
 import auto.typecar.carsobj.detail.*;
 
 public class Factory implements CarFactory {
@@ -35,17 +36,22 @@ public class Factory implements CarFactory {
     }
 
     @Override
-    public Camry createCabriolet() {
+    public Camry createCamry() {
         return new Camry();
     }
 
     @Override
-    public CargoVan createCargoVan() {
-        return CargoVan;
+    public Dyna createDyna() {
+        return new Dyna();
     }
 
     @Override
-    public PassengerСar createPassengerCar() {
-        return PassengerСar;
+    public Hiance createHiance() {
+        return new Hiance();
+    }
+
+    @Override
+    public Solara createSolara() {
+        return new Solara();
     }
 }
