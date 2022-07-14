@@ -1,6 +1,9 @@
+import auto.typecar.Cabriolet;
+import auto.typecar.CargoVan;
+import auto.typecar.PassengerСar;
 import auto.typecar.carsobj.detail.*;
 
-public class Factory {
+public class Factory implements CarFactory {
 
     private Country country;
 
@@ -28,5 +31,21 @@ public class Factory {
             wheels[i] = new Wheel(true, wheelRadius);
         }
         return wheels;
+    }
+
+    @Override
+    public Cabriolet createCabriolet() {
+        Cabriolet Cabriolet = createCabriolet();
+        return Cabriolet;
+    }
+
+    @Override
+    public CargoVan createCargoVan() {
+        return CargoVan;
+    }
+
+    @Override
+    public PassengerСar createPassengerCar() {
+        return PassengerСar;
     }
 }
