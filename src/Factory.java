@@ -1,6 +1,7 @@
 import auto.typecar.Cabriolet;
 import auto.typecar.CargoVan;
 import auto.typecar.PassengerСar;
+import auto.typecar.carsobj.Camry;
 import auto.typecar.carsobj.detail.*;
 
 public class Factory implements CarFactory {
@@ -34,9 +35,8 @@ public class Factory implements CarFactory {
     }
 
     @Override
-    public Cabriolet createCabriolet() {
-        Cabriolet Cabriolet = createCabriolet();
-        return Cabriolet;
+    public Camry createCabriolet() {
+        return new Camry();
     }
 
     @Override
