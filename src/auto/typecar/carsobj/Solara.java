@@ -8,8 +8,10 @@ public class Solara extends Cabriolet {
 
     private MiniFrigde miniFrigde;
 
-    public Solara(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo, Wheel[] wheels, GasTank gasTank, Engine engine, Electric electric, Headlight headLight, boolean isRoofUp) {
-        super(carPrice, carSpeed, carColor, transmission, isGo, wheels, gasTank, engine, electric, headLight, isRoofUp,MiniFrigde miniFrigde);
+    public Solara(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo, Wheel[] wheels,
+                  GasTank gasTank, Engine engine, Electric electric, Headlight headLight, boolean isRoofUp) {
+        super(carPrice, carSpeed, carColor, transmission, isGo, wheels, gasTank, engine, electric, headLight,
+                isRoofUp,MiniFrigde miniFrigde);
         if (wheels[0].getWheelRadius() != WheelRadius.R16) {
             throw new RuntimeException("Радиус должен быть 16");
         }

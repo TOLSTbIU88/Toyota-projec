@@ -1,11 +1,7 @@
 
-import auto.typecar.carsobj.Camry;
-import auto.typecar.carsobj.Dyna;
-import auto.typecar.carsobj.Hiance;
-import auto.typecar.carsobj.Solara;
 import auto.typecar.carsobj.detail.*;
 
-public class Factory implements  {
+public class Factory  {
 
     private Country country;
 
@@ -24,35 +20,29 @@ public class Factory implements  {
     public Headlight createHeadlight(){
         return new Headlight(true);
     }
+    public MiniFrigde createMiniFridge() {
+        return new MiniFrigde();
+    }
 
+    public Socket createSocket() {
+        return new Socket();
+    }
 
+    public Usb createUsb() {
+        return new Usb();
+    }
+    public Wheel createSafeWheel(WheelRadius wheelRadius) {
+        return new Wheel(true, wheelRadius);
+    }
 
-    public static Wheel[] createWheelsWithRadius(WheelRadius wheelRadius) {
+    public Wheel[] createWheels(WheelRadius wheelRadius) {
         Wheel[] wheels = new Wheel[4];
         for (int i = 0; i < wheels.length; i++) {
             wheels[i] = new Wheel(true, wheelRadius);
         }
         return wheels;
     }
-
-    @Override
-    public Camry createCamry() {
-        return new Camry(50000,60,"red",Transmission.AUTO,true,
-                (createWheelsWithRadius(WheelRadius.R17)),0,true,true,true, new Usb());
-    }
-
-    @Override
-    public Dyna createDyna() {
-        return new Dyna();
-    }
-
-    @Override
-    public Hiance createHiance() {
-        return new Hiance();
-    }
-
-    @Override
-    public Solara createSolara() {
-        return new Solara();
+    public Country getCountry() {
+        return country;
     }
 }
