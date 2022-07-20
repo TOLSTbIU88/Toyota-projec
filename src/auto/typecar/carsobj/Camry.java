@@ -9,9 +9,6 @@ public class Camry extends PassengerСar {
 
     private Usb usb;
 
-
-
-
     public Camry(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo, Wheel[] wheels,
                  GasTank gasTank, Engine engine, Electric electric, Headlight headLight, boolean cruiseControlOn) {
         super(carPrice, carSpeed, carColor, transmission, isGo, wheels, gasTank, engine, electric, headLight,
