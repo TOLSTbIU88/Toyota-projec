@@ -5,7 +5,7 @@ import auto.typecar.carsobj.Hiance;
 import auto.typecar.carsobj.Solara;
 import auto.typecar.carsobj.detail.*;
 
-public class Factory implements CarFactory {
+public class Factory implements  {
 
     private Country country;
 
@@ -37,7 +37,8 @@ public class Factory implements CarFactory {
 
     @Override
     public Camry createCamry() {
-        return new Camry();
+        return new Camry(50000,60,"red",Transmission.AUTO,true,
+                (createWheelsWithRadius(WheelRadius.R17)),0,true,true,true, new Usb());
     }
 
     @Override
