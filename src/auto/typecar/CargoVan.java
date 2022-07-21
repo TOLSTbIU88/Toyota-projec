@@ -1,7 +1,6 @@
 package auto.typecar;
 
 import auto.Car;
-import auto.StartCarException;
 import auto.typecar.carsobj.detail.*;
 
 public abstract class CargoVan extends Car {
