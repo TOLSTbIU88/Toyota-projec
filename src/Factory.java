@@ -5,6 +5,10 @@ public class Factory  {
 
     private Country country;
 
+    public Factory(Country country) {
+        this.country = country;
+    }
+
     public Electric createElectric(){
         return new Electric(true);
     }

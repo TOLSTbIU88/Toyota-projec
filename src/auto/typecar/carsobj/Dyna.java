@@ -10,9 +10,9 @@ public class Dyna extends CargoVan {
 
 
     public Dyna(float carPrice, int carSpeed, String carColor, Transmission transmission, boolean isGo, Wheel[] wheels,
-                GasTank gasTank, Engine engine, Electric electric, Headlight headLight, int loadCapacity) {
+                GasTank gasTank, Engine engine, Electric electric, Headlight headLight, int loadCapacity,Socket socket) {
         super(carPrice, carSpeed, carColor, transmission, isGo, wheels, gasTank, engine, electric, headLight,
-                loadCapacity, Socket socket);
+                loadCapacity);
         if (wheels[0].getWheelRadius() != WheelRadius.R20) {
             throw new RuntimeException("Радиус должен быть 20");
         }

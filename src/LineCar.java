@@ -64,7 +64,7 @@ public class LineCar {
         Wheel[] wheels = factory.createWheels(WheelRadius.R20);
         Wheel safeWheel = factory.createSafeWheel(WheelRadius.R20);
 
-        return new Hiance(35000,60,"red",Transmission.MANUAL,
-                true,wheels,gasTank,engine,electric,headLights,5000,safeWheel);
-
+        return new Hiance(35000, 60, "red", Transmission.MANUAL,
+                true, wheels, gasTank, engine, electric, headLights, 5000, safeWheel);
+    }
 }
